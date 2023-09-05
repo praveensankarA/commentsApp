@@ -1,0 +1,232 @@
+/* Write your CSS here */
+.bg-container {
+  /* background-color: rgb(137, 42, 226);
+   */
+  background: linear-gradient(
+    to bottom,
+    rgb(214, 91, 212),
+    rgb(152, 38, 252) 40%
+  );
+  min-height: 110vh;
+  display: flex;
+  font-family: 'roboto';
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-height: 60vh;
+  padding-bottom: 20px;
+  background-color: transparent;
+  /* background-color: rgb(137, 42, 226); */
+  /* align-items: center; */
+}
+
+.title-container {
+  display: flex;
+  /* text-align: center; */
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.main-head {
+  color: #fff;
+  /* font-weight: 700; */
+  margin-bottom: 29px;
+  font-family: 'roboto';
+  font-size: 40px;
+  width: 69%;
+  text-align: center;
+  border-bottom: 3px ridge white;
+  animation: myBorder 2s alternate-reverse infinite;
+}
+
+@keyframes myBorder {
+  0% {
+    border-color: rgb(6, 215, 223);
+  }
+  25% {
+    border-color: rgb(236, 213, 5);
+  }
+  50% {
+    border-color: rgb(52, 247, 3);
+  }
+  100% {
+    border-color: rgb(255, 139, 255);
+  }
+}
+.comment-img {
+  width: 230px;
+  margin-top: 10px;
+}
+.comment-img-lg {
+  display: none;
+}
+.intro-text {
+  color: white;
+  display: block;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 9px;
+  text-align: start;
+  align-items: flex-start;
+  /* width: 100%; */
+}
+.name-input {
+  width: 250px;
+  padding: 7px;
+  opacity: 1, 0;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  border-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+.name-input:hover {
+  opacity: 1;
+  border: 2px dashed white;
+  animation: myBorder 2s alternate-reverse infinite;
+}
+.comment-box {
+  width: 250px;
+  outline: none;
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 140px;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  /* font-weight: 700; */
+}
+.comment-box:hover {
+  border: 2px dashed white;
+  animation: myBorder 2s alternate-reverse infinite;
+}
+.submit-btn {
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 10px;
+  border-color: transparent;
+  align-items: flex-start;
+  text-align: start;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin-right: auto;
+  background-color: #0096ff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.submit-btn:hover {
+  background-color: rgb(252, 9, 231);
+}
+.btn-container {
+  text-align: start;
+  margin-top: 12px;
+}
+@keyframes myBorder {
+  0% {
+    border-color: rgb(6, 215, 223);
+  }
+  25% {
+    border-color: rgb(236, 213, 5);
+  }
+  50% {
+    border-color: rgb(52, 247, 3);
+  }
+  100% {
+    border-color: rgb(255, 139, 255);
+  }
+}
+hr {
+  width: 88%;
+  animation: myBorder 1s infinite;
+}
+/* Lg-Devices  */
+
+@media (min-width: 588px) {
+  .comment-img {
+    display: none;
+  }
+  .comment-img-lg {
+    display: block;
+    /* margin-top: 30px; */
+    padding-top: 130px;
+    padding-right: 40px;
+    width: 400px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 70vh;
+    /* background-color: rgb(137, 42, 226); */
+    width: 100%;
+    align-items: center;
+  }
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-top: -30px; */
+  }
+  .main-head {
+    font-size: 46px;
+  }
+  .name-input {
+    background-color: ;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: block;
+    outline: hidden;
+    border-color: transparent;
+  }
+  .comment-box {
+    margin-top: 10px;
+    width: 350px;
+    border-radius: 10px;
+    height: 150px;
+    outline: hidden;
+  }
+}
+
+.comment-count-para {
+  color: white;
+  text-align: start;
+  width: 70%;
+  font-weight: 800;
+}
+.comment-count {
+  color: white;
+  background-color: #0096ff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.comment-list-container {
+  width: 90%;
+  padding: 0px;
+  list-style: none;
+  margin-top: -10px;
+  margin-left: 5px;
+}
+@media (min-width: 588px) {
+  .comment-count-para {
+    font-size: 20px;
+    width: 78%;
+  }
+  .comment-list-container {
+    width: 70%;
+    padding: 0px;
+    list-style: none;
+    margin-top: -10px;
+    /* margin-left: 190px; */
+    /* align-self: flex-start; */
+  }
+}

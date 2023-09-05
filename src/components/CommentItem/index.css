@@ -1,0 +1,132 @@
+.amber {
+  background-color: #f59e0b;
+}
+
+.blue {
+  background-color: #0b69ff;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.emerald {
+  background-color: #10b981;
+}
+
+.teal {
+  background-color: #14b8a6;
+}
+
+.red {
+  background-color: #b91c1c;
+}
+
+.light-blue {
+  background-color: #0ea5e9;
+}
+
+/* Write your CSS here */
+.list-ele {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  margin-top: -25px;
+  /* box-shadow: 0px 0px 4px 0px rgb(152, 204, 157); */
+  margin-bottom: 10px;
+  width: 100%;
+}
+.logo {
+  color: #fff;
+  padding: 10px;
+  width: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 900;
+  border-radius: 100%;
+}
+.logo-name-time-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Roboto;
+}
+.name {
+  font-weight: 800;
+  font-size: 19px;
+  margin-left: 20px;
+}
+.time {
+  margin-left: 20px;
+  align-items: flex-start;
+}
+.comment {
+  color: white;
+  margin-left: 36px;
+  margin-right: 3px;
+  width: 80%;
+  margin-top: -30px;
+}
+.like-btn-delete-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 90%;
+}
+.like-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.like-btn-container {
+  display: flex;
+  opacity: 0.9;
+  align-items: center;
+  font-weight: 800;
+  outline: none;
+  border: 0px;
+  padding: 0px 14px;
+  height: 30px;
+  border-radius: 10px;
+}
+.comment-text {
+  font-weight: 800;
+}
+@media (min-width: 579px) {
+  .a:hover {
+    background-color: #0096ff;
+    color: #fff;
+    font-family: sans-serif;
+  }
+}
+.btn-name {
+  font-family: 'roboto';
+  font-weight: 600;
+}
+.btn-name-s {
+  color: #0096ff;
+  font-family: 'roboto';
+  font-weight: 600;
+}
+.like-btn-container1 {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  padding: 0px 4px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border: 0px;
+}
+.b:hover {
+  background-color: #b91c1c;
+}
+.hr {
+  width: 100%;
+}
